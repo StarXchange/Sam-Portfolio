@@ -18,12 +18,12 @@ const Contact = () => {
         whileInView={{opacity: 1, x: 0}}
         initial={{opacity: 0, x: -100}}
         transition={{duration: 0.5}}
-        className="my-4 text-black font-bold">132,Lagos Street, Ebutte-Meta,LAGOS.</motion.p>
+        className="my-4 text-black font-bold">135,Borno way, Ebutte-Meta,LAGOS.</motion.p>
         <motion.p
         whileInView={{opacity: 1, x: 0}}
         initial={{opacity: 0, x: -100}}
         transition={{duration: 0.5}}
-        className="my-4 text-black font-bold">09025338156, 09052850349</motion.p>
+        className="my-4 text-black font-bold">08028360704, 09025338156 </motion.p>
         <a 
         whileInView={{opacity: 1, x: 0}}
         initial={{opacity: 0, x: -100}}
