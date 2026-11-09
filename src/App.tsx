@@ -1,4 +1,3 @@
-import React from 'react';
 import "./index.css";
 import "./App.css";
 import Navbar from './components/Navbar';
@@ -7,6 +6,7 @@ import About from './components/About';
 import Technologies from './components/Technologies';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Qualifications from './components/Qualifications';
 import Contact from './components/Contact';
 
 const App = () => {
@@ -24,6 +24,7 @@ const App = () => {
         <Technologies />
         <Experience />
         <Projects />
+        <Qualifications />
         <Contact />
       </div>
     </div>
