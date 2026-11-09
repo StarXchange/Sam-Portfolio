@@ -1,6 +1,6 @@
-import React from 'react';
 import logo from "../assets/logo.png";
-import { FaLinkedin, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { CONTACT } from "../index";
 
 const Navbar = () => {
   return (
@@ -13,7 +13,7 @@ const Navbar = () => {
       {/* Social Media Icons Section */}
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
         <a 
-          href="https://www.linkedin.com/in/samuel-george-3bb201330" 
+          href={CONTACT.linkedin} 
           target="_blank" 
           rel="noopener noreferrer"
           className="hover:text-purple-500 transition-colors duration-300"
@@ -22,21 +22,12 @@ const Navbar = () => {
         </a>
         
         <a 
-          href="https://github.com/StarXchange" 
+          href={CONTACT.github} 
           target="_blank" 
           rel="noopener noreferrer"
           className="hover:text-purple-500 transition-colors duration-300"
         >
           <FaGithub />
-        </a>
-        
-        <a 
-         
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="hover:text-purple-500 transition-colors duration-300"
-        >
-          <FaInstagram />
         </a>
         
         <a 

@@ -1,4 +1,3 @@
-import React from 'react'
 import { RiReactjsLine } from 'react-icons/ri'
 import { RiNextjsFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
@@ -12,11 +11,15 @@ import {
   SiGraphql, 
   SiGit, 
   SiGithub, 
-  SiMysql 
+  SiMysql,
+  SiAngular,
+  SiPython,
+  SiAmazonwebservices
 } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 import { motion } from "motion/react";
 
-const iconVariants = (duration) => ({
+const iconVariants = (duration: number) => ({
     initial: { y: -10 },
     animate: {
         y: [10, -10],
@@ -24,7 +27,7 @@ const iconVariants = (duration) => ({
             duration: duration,
             ease: "linear",
             repeat: Infinity,
-            repeatType: "reverse"
+            repeatType: "reverse" as const
         },
     },
 });
@@ -68,6 +71,9 @@ const Technologies = () => {
                     <motion.div variants={iconVariants(3.2)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
                         <SiRedux className='text-7xl text-purple-600' />
                     </motion.div>
+                    <motion.div variants={iconVariants(2.6)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
+                        <SiAngular className='text-7xl text-red-600' />
+                    </motion.div>
                 </div>
             </div>
 
@@ -83,6 +89,9 @@ const Technologies = () => {
                     </motion.div>
                     <motion.div variants={iconVariants(2.9)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
                         <SiGraphql className='text-7xl text-pink-500' />
+                    </motion.div>
+                    <motion.div variants={iconVariants(3.1)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
+                        <SiPython className='text-7xl text-yellow-500' />
                     </motion.div>
                 </div>
             </div>
@@ -101,6 +110,19 @@ const Technologies = () => {
             </div>
 
          
+
+            {/* Cloud */}
+            <div className='w-full text-center mb-4 mt-8'>
+                <h3 className='text-purple-500 text-xl font-semibold mb-4'>Cloud</h3>
+                <div className='flex flex-wrap items-center justify-center gap-4'>
+                    <motion.div variants={iconVariants(2.5)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
+                        <SiAmazonwebservices className='text-7xl text-orange-500' />
+                    </motion.div>
+                    <motion.div variants={iconVariants(3)} initial="initial" animate="animate" className='rounded-2xl border-4 border-neutral-800 p-4'>
+                        <VscAzure className='text-7xl text-blue-500' />
+                    </motion.div>
+                </div>
+            </div>
 
             {/* Version Control */}
             <div className='w-full text-center mb-4 mt-8'>

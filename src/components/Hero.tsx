@@ -1,10 +1,10 @@
 import { HERO_CONTENT } from "../index"; // Ensure correct import
 import SamProfilePic from "../assets/SamProfilePic.png"; // Ensure file exists
 import {motion} from "motion/react";
-import CV from "../assets/GeorgeSamuelCV.docx"
+import CV from "../assets/GeorgeSamuelCV.pdf"
 
 
-const container = (delay) => (
+const container = (delay: number) => (
   {
     hidden: { x: -100, opacity: 0 },
     visible: {
@@ -29,14 +29,14 @@ const Hero = () => {
               animate="visible"
               
             className="pb-8 text-4xl font-bold tracking-tight lg:mt-16 lg:text-6xl bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-transparent text-[30px]">
-              Mr George Samuel
+              George Samuel Ebibote
             </motion.h1>
             <motion.span 
              variants={container(0.5)}
              initial="hidden"
              animate="visible"
             className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-2xl lg:text-4xl tracking-tight text-transparent">
-            Philosopher/Fullstack Software Engineer
+            Philosopher | Software Engineer | Cloud Engineer
             </motion.span>
             <motion.p 
              variants={container(1)}
@@ -47,7 +47,7 @@ const Hero = () => {
             </motion.p>
             <div className="flex justify-center items-center">
               <button className="bg-slate-700 px-6 py-2 rounded">
-                <a href={CV} download={CV}>Download CV</a>
+                <a href={CV} download="George_Samuel_Ebibote_CV.pdf">Download CV</a>
                 </button>
             </div>
           </div>
